@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://innatejoker.github.io/2025/04/08/快速驯服 vscode - oier/"/>
+    <link rel="canonical" href="http://innatejoker.github.io/2025/09/14/wsl 使用基础/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -133,17 +133,17 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="快速驯服 VSCode - OIer">
-<meta property="og:url" content="http://innatejoker.github.io/2025/04/08/%E5%BF%AB%E9%80%9F%E9%A9%AF%E6%9C%8D%20VSCode%20-%20OIer/index.html">
+<meta property="og:title" content="WSL 使用基础">
+<meta property="og:url" content="http://innatejoker.github.io/2025/09/14/WSL%20%E4%BD%BF%E7%94%A8%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="InnateJoker&#39;s Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://innatejoker.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-04-08T07:23:00.000Z">
-<meta property="article:modified_time" content="2025-09-14T03:59:31.849Z">
+<meta property="article:published_time" content="2025-09-14T04:00:34.756Z">
+<meta property="article:modified_time" content="2025-09-14T04:38:18.004Z">
 <meta property="article:author" content="Innate_Joker">
-<meta property="article:tag" content="VSCode">
-<meta property="article:tag" content="C++">
+<meta property="article:tag" content="WSL">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://innatejoker.github.io/images/redefine-og.webp">
     
@@ -157,7 +157,7 @@
     
     <title>
         
-            快速驯服 VSCode - OIer | InnateJoker&#39;s Blog
+            WSL 使用基础 | InnateJoker&#39;s Blog
         
     </title>
 
@@ -508,7 +508,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">快速驯服 VSCode - OIer</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">WSL 使用基础</h1>
 			</div>
 			
 		</div>
@@ -529,15 +529,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2025-04-08 15:23</span>
-        <span class="mobile">2025-04-08 15:23</span>
+        <span class="desktop">2025-09-14 12:34</span>
+        <span class="mobile">2025-09-14 12:34</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-09-14 11:59:31</span>
-            <span class="mobile">2025-09-14 11:59:31</span>
+            <span class="desktop">2025-09-14 12:38:18</span>
+            <span class="mobile">2025-09-14 12:38:18</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -565,11 +565,11 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/VSCode/">VSCode</a>&nbsp;
+                        <a href="/tags/WSL/">WSL</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/C/">C++</a>&nbsp;
+                        | <a href="/tags/Linux/">Linux</a>&nbsp;
                     </li>
                 
             </ul>
@@ -595,154 +595,36 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="Updates">Updates</h2>
-<p>2025.04.08 添加了将编译器的可执行文件的路径添加至环境变量。</p>
-<p>2025.04.08 添加了编译器下载步骤。</p>
-<p>2025.05.03 修改了二级标题 Update 为 Updates</p>
-<p>2025.05.03 根据评论区反馈添加了第二种（修改 launch.json）使程序暂停下来的方法。</p>
-<p>2025.05.24 更新了 Markdown ，使其完全符合 Markdown 标准（放到 VSCode 中不会报错啦！）。</p>
-<p>2025.08.04 添加了让程序暂停的第三种方法。</p>
-<p>2025.08.04 删除了二级标题脚注。</p>
-<p>2025.09.06 更改了 配置launch.json章节中的一个小问题。</p>
-<p>2025.09.06 更改了运行和调试代码章节的布局。</p>
-<p>2025.09.14 删除了大量名词的行内代码效果。</p>
-<h2 id="VSCode-简介">VSCode 简介</h2>
-<blockquote>
-<p>Visual Studio Code（简称“VS Code”）是 Microsoft 在2015年4月30日 Build 开发者大会上正式宣布一个运行于 Mac OS X 、Windows 和 Linux 之上的，针对于编写现代 Web 和云应用的跨平台源代码编辑器，可在桌面上运行，并且可用于 Windows ，macOS 和 Linux。它具有对 JavaScript ，TypeScript 和 Node.js 的内置支持，并具有丰富的其他语言（例如 C++ ，C＃ ， Java ， Python ， PHP ， Go ）和运行时（例如 .NET 和 Unity ）扩展的生态系统。<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-</blockquote>
-<h2 id="下载">下载</h2>
-<h3 id="编译器下载">编译器下载</h3>
-<p>推荐使用 MinGW-w64 作为你的编译器。通常会从 <a class="link"   target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/" >这里<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载。不过呢，如果你希望使用最新版的 MinGW-w64 编译器，可以从 <a class="link"   target="_blank" rel="noopener" href="https://github.com/niXman/mingw-builds-binaries/releases" >这里<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载它。具体步骤不过多论述。</p>
-<p><strong>PS：其实用 DEV-C++ 自带的编译器也行。</strong></p>
-<p>注意，无论如何，你都需要将编译器可执行文件的路径添加至环境变量。具体步骤也不过多论述。</p>
-<h3 id="VSCode-下载">VSCode 下载</h3>
-<p><a class="link"   target="_blank" rel="noopener" href="https://code.visualstudio.com/download" >从这里下载 VSCode<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
-<p><strong>PS：本文 VSCode 版本为 1.99 ，操作系统版本为 Windows 11 。</strong></p>
-<p>下载教程不多复述，我们直接进入插件下载环节。</p>
-<h3 id="插件下载">插件下载</h3>
-<p>我们须要下载以下这几个插件：Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code 、 C/C++ 、 C/C++ Themes 、 C/C++ Extension Pack 。</p>
-<p>插件可以直接到 <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/57gzxvug.png"
-                      alt="VSCode 插件图标"
-                > 搜索。</p>
-<p>安装完拓展后，请从 演练:C/C++ 页面选择默认 C/C++ 编译器。</p>
-<h2 id="配置-JSON">配置 JSON</h2>
-<h3 id="创建文件夹">创建文件夹</h3>
-<p>首先，你需要创建一个文件夹，</p>
-<p><strong>PS：使用 VSCode 时，所有文件夹和文件都不能使用全角字符命名。</strong></p>
-<p>然后按下图的方法打开。然后点击信任。</p>
+			<h2 id="启用-WSL">启用 WSL</h2>
+<p>其实如果用的是新版本 <code>VSCode</code> 而且电脑上没有安装 <code>WSL</code> 那么在每次启动 <code>VSCode</code> 时都会提示让你装 <code>WSL</code> 的。如果没有，那么请转到控制面板，启用 ‘适用于 Windows 的 Linux 子系统’ 。如果还未安装 WSL ，那么就会开始下载。</p>
+<p><strong>PS</strong>：本文用的是 <code>Windows 11 24H2 家庭版</code> 如果其他版本 <code>Windows</code> 系统有显著差异可以参考其他教程。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/jwbdsx8p.png"
-                      alt="信任选项框"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/uvog7wl3.png"
+                      alt="启用 WSL"
                 ></p>
-<h3 id="创建-launch-json-文件">创建 launch.json 文件</h3>
-<p>然后按照下图找到这个图标 <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/9t1hrg2i.png"
-                      alt="VSCode 调试图标"
-                > ，点击 创建 launch.json 文件 ，选择 C++ (GDB/LLDB) 。</p>
-<h3 id="配置-launch-json">配置 launch.json</h3>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/mxr4tpbn.png"
-                      alt="创建 launch.json"
-                ></p>
-<p>然后从弹出的窗口里选择 C/C++: (gdb) 启动。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/efghmuv9.png"
-                      alt="配置 launch.json"
-                ></p>
-<p>接着将键 <code>program</code> 改为 <code>$&#123;fileDirname&#125;/$&#123;fileBasenameNoExtension&#125;.exe</code> ，键 <code>miDebuggerPath</code> 改为你的编译器里的 <code>gdb.exe</code> 的路径并保存。</p>
-<p><strong>PS</strong>: 后文中图片展示不是 <code>$&#123;fileDirname&#125;</code> ，是因为这个问题是后面才发现的，图片没改。</p>
-<h3 id="创建-cpp-文件">创建 .cpp 文件</h3>
-<p>然后点击下图所示的按钮创建一个文件，并命名为 <code>&lt;你想要的文件名&gt;.cpp</code> ，然后随便写点代码。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/shye8i8i.png"
-                      alt="创建 .cpp 文件"
-                ></p>
-<h3 id="创建-配置-tasks-json-文件">创建 &amp; 配置 tasks.json 文件</h3>
-<p>然后如下图所示，点击 配置默认生成任务 ，选择 C/C++: g++.exe 生成活动文件 ，创建 tasks.json 文件。其中， <code>args</code> 里面是写编译命令的。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/hljv1y5k.png"
-                      alt="配置 tasks.json"
-                ></p>
-<h3 id="在-launch-json-文件中添加-preLaunchTask-键">在 launch.json 文件中添加 <code>preLaunchTask</code> 键</h3>
-<p>最后，需在 launch.json 中键 <code>setupCommands</code> 后面添加一个新的键 <code>preLaunchTask</code> ，值必须和 tasks.json 文件中的键 <code>label</code> 的值相同。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/p0xel0cy.png"
-                      alt="在 launch.json 中 添加 preLaunchTasks 键"
-                ></p>
-<h3 id="最终结果">最终结果</h3>
-<p>如下图。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/bwsgxkkv.png"
-                      alt="配置完成效果图"
-                ></p>
-<h2 id="调试和运行代码">调试和运行代码</h2>
-<h3 id="使用-VSCode-集成控制台来运行调试代码。">使用 VSCode 集成控制台来运行调试代码。</h3>
-<p>可以通过下图的按钮来调试和运行 C/C++ 代码。当然，也可以通过 F5 （调试） ， <code>Ctrl + F5</code> （运行）来完成以上功能。输入输出将在 VSCode 的集成终端来完成。</p>
-<p><strong>PS：似乎某些古老编译器不支持在 VSCode 的集成终端输入输出（大雾，比如 DEV-C++ 自带的编译器。</strong></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/liocrjpz.png"
-                      alt="演示运行 &amp; 调试按钮"
-                ></p>
-<h3 id="使用类似-DEV-C-的控制台调试代码">使用类似 DEV-C++ 的控制台调试代码</h3>
-<p>如果你比较喜欢像 DEV-C++ 那样的控制台风格的话，那么你可以将 launch.json 文件中的键 <code>externalConsole</code> 改为 <code>true</code> 。这样就可以打开一个黑乎乎的窗口啦！不过新的问题又来了：这样程序已结束整个窗口就会关闭，为此提供两种解决方案，推荐方案三。</p>
-<h4 id="窗口闪退解决方案一">窗口闪退解决方案一</h4>
-<p>在 <code>return 0;</code> 前打上一行代码 <code>system(&quot;pause&quot;);</code> 以让窗口不会立即关闭。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/7bpic6ap.png"
-                      alt="让显示控制台的程序不立马关闭方案一"
-                ></p>
-<h4 id="窗口闪退解决方案二">窗口闪退解决方案二</h4>
-<p>修改 launch.json 。我们需要把 <code>program</code> 键的值修改为 <code>C:\\Windows\\System32\\cmd.exe</code>，<code>args</code> 键的值修改为 <code>&quot;/c&quot;,&quot;$&#123;fileDirname&#125;/$&#123;fileBasenameNoExtension&#125;.exe&quot;,&quot;&amp;&quot;,&quot;pause&quot;</code> 也可以达到跟上面一样的效果。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/7bpic6ap.png"
-                      alt="让显示控制台的程序不立马关闭方案二"
-                ></p>
-<h4 id="窗口闪退解决方案三">窗口闪退解决方案三</h4>
-<p>在代码主函数 <code>return 0</code> 的位置打一个断点，每次都使用调试来运行代码，这样每次在 <code>return 0</code> 的位置都会停一下，这时候就可以查看结果啦！不过停止程序就需要点下一步或者停止啦！<br>
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/kdf0rddt.png"
-                      alt="让显示控制台的程序不立马关闭方案三"
-                ></p>
+<h2 id="安装分发">安装分发</h2>
+<h3 id="查看已安装列表">查看已安装列表</h3>
+<p>通过 <code>wsl --list</code> 命令可以查看已经安装的列表。比如我现在已经安装了，输出如下：</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">适用于 Linux 的 Windows 子系统分发:</span><br><span class="line">docker-desktop (默认)</span><br><span class="line">Ubuntu</span><br></pre></td></tr></table></figure></div>
+<h3 id="查看可以安装的在线分发">查看可以安装的在线分发</h3>
+<p>接着通过 <code>wsl --list --online</code> 命令可以查看可以安装的在线分发列表。输出如下：</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">以下是可安装的有效分发的列表。</span><br><span class="line">使用 &#x27;wsl.exe --install &lt;Distro&gt;&#x27; 安装。</span><br><span class="line"></span><br><span class="line">NAME                            FRIENDLY NAME</span><br><span class="line">AlmaLinux-8                     AlmaLinux OS 8</span><br><span class="line">AlmaLinux-9                     AlmaLinux OS 9</span><br><span class="line">AlmaLinux-Kitten-10             AlmaLinux OS Kitten 10</span><br><span class="line">AlmaLinux-10                    AlmaLinux OS 10</span><br><span class="line">Debian                          Debian GNU/Linux</span><br><span class="line">FedoraLinux-42                  Fedora Linux 42</span><br><span class="line">SUSE-Linux-Enterprise-15-SP6    SUSE Linux Enterprise 15 SP6</span><br><span class="line">SUSE-Linux-Enterprise-15-SP7    SUSE Linux Enterprise 15 SP7</span><br><span class="line">Ubuntu                          Ubuntu</span><br><span class="line">Ubuntu-24.04                    Ubuntu 24.04 LTS</span><br><span class="line">archlinux                       Arch Linux</span><br><span class="line">kali-linux                      Kali Linux Rolling</span><br><span class="line">openSUSE-Tumbleweed             openSUSE Tumbleweed</span><br><span class="line">openSUSE-Leap-15.6              openSUSE Leap 15.6</span><br><span class="line">Ubuntu-20.04                    Ubuntu 20.04 LTS</span><br><span class="line">Ubuntu-22.04                    Ubuntu 22.04 LTS</span><br><span class="line">OracleLinux_7_9                 Oracle Linux 7.9</span><br><span class="line">OracleLinux_8_10                Oracle Linux 8.10</span><br><span class="line">OracleLinux_9_5                 Oracle Linux 9.5</span><br></pre></td></tr></table></figure></div>
+<h3 id="安装分发-2">安装分发</h3>
+<p>通过 <code>wsl --install &lt;分发名称&gt;</code> 就可以安装分发了。输出如下：</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">正在下载: Ubuntu</span><br><span class="line">[==========================53.9%                           ]</span><br></pre></td></tr></table></figure></div>
+<h2 id="启动分发">启动分发</h2>
+<p>通过 <code>wsl --distribution &lt;分发名称&gt;</code> 就可以运行对应的分发名称啦！</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Provisioning the new WSL instance Ubuntu</span><br><span class="line">This might take a while...</span><br><span class="line">Create a default Unix user account: &lt;你想要的用户名&gt;</span><br><span class="line">New password: </span><br><span class="line">Retype new password: </span><br><span class="line">passwd: password updated successfully</span><br><span class="line">To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.</span><br><span class="line">See &quot;man sudo_root&quot; for details.</span><br><span class="line"></span><br><span class="line">Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)</span><br><span class="line"></span><br><span class="line"> * Documentation:  https://help.ubuntu.com</span><br><span class="line"> * Management:     https://landscape.canonical.com</span><br><span class="line"> * Support:        https://ubuntu.com/pro</span><br><span class="line"></span><br><span class="line"> System information as of Sun Sep 14 12:28:32 CST 2025</span><br><span class="line"></span><br><span class="line">  System load:  0.0                 Processes:             31</span><br><span class="line">  Usage of /:   0.1% of 1006.85GB   Users logged in:       0</span><br><span class="line">  Memory usage: 5%                  IPv4 address for eth0: 172.20.216.108</span><br><span class="line">  Swap usage:   0%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">This message is shown once a day. To disable it please create the</span><br><span class="line">/home/&lt;你的用户名&gt;/.hushlogin file.</span><br><span class="line">&lt;你的用户名&gt;&gt;@localhost:/mnt/d/Project/Blog$ </span><br></pre></td></tr></table></figure></div>
+<p><strong>PS</strong>：在输入密码的时候，你会看不见密码字符，这是盲人输出，属于正常现象。</p>
+<h2 id="关闭指定分发">关闭指定分发</h2>
+<p>使用 <code>wsl --terminate &lt;分发名称&gt;</code> 。</p>
+<h2 id="WSL-命令">WSL 命令</h2>
+<p>来自 <code>wsl --help</code> 。</p>
+<div class="code-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br></pre></td><td class="code"><pre><span class="line">版权所有 (c) Microsoft Corporation。保留所有权利。</span><br><span class="line">有关此产品的隐私信息，请访问 https://aka.ms/privacy。</span><br><span class="line"></span><br><span class="line">用法: wsl.exe [Argument][Options...][CommandLine]</span><br><span class="line"></span><br><span class="line">运行 Linux 二进制文件的参数:</span><br><span class="line"></span><br><span class="line">    如果未提供命令行，wsl.exe 将启动默认 shell。</span><br><span class="line"></span><br><span class="line">    --exec, -e &lt;CommandLine&gt;</span><br><span class="line">        在不使用默认 Linux shell 的情况下执行指定的命令。</span><br><span class="line"></span><br><span class="line">    --shell-type &lt;standard|login|none&gt;</span><br><span class="line">        使用提供的 shell 类型执行指定的命令。</span><br><span class="line"></span><br><span class="line">    --</span><br><span class="line">        按原样传递剩余的命令行。</span><br><span class="line"></span><br><span class="line">选项:</span><br><span class="line">    --cd &lt;Directory&gt;</span><br><span class="line">        将指定目录设置为当前工作目录。</span><br><span class="line">        如果使用 ~，则将使用 Linux 用户的主路径。如果路径以</span><br><span class="line">        / 字符开始，它将被解释为绝对 Linux 路径。</span><br><span class="line">        否则，该值必须是绝对 Windows 路径。</span><br><span class="line"></span><br><span class="line">    --distribution, -d &lt;DistroName&gt;</span><br><span class="line">        运行指定的分发版。</span><br><span class="line"></span><br><span class="line">    --distribution-id &lt;DistroGuid&gt;</span><br><span class="line">        运行指定的分发版 ID。</span><br><span class="line"></span><br><span class="line">    --user, -u &lt;UserName&gt;</span><br><span class="line">        以指定用户身份运行。</span><br><span class="line"></span><br><span class="line">    --system</span><br><span class="line">        为系统分发版启动 shell。</span><br><span class="line"></span><br><span class="line">用于管理适用于 Linux 的 Windows 子系统的参数:</span><br><span class="line"></span><br><span class="line">    --help</span><br><span class="line">        显示使用情况信息。</span><br><span class="line"></span><br><span class="line">    --debug-shell</span><br><span class="line">        出于诊断目的打开 WSL2 调试 shell。</span><br><span class="line"></span><br><span class="line">    --install [Distro] [Options...]</span><br><span class="line">        安装适用于 Linux 的 Windows 子系统分发版。</span><br><span class="line">        有关有效分发版的列表，请使用 &#x27;wsl.exe --list --online&#x27;。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --enable-wsl1</span><br><span class="line">                启用 WSL1 支持。</span><br><span class="line"></span><br><span class="line">            --from-file &lt;Path&gt;</span><br><span class="line">                从本地文件安装分发版。</span><br><span class="line"></span><br><span class="line">            --legacy</span><br><span class="line">                使用旧分发版清单。</span><br><span class="line"></span><br><span class="line">            --location &lt;Location&gt;</span><br><span class="line">                设置分发版的安装路径。</span><br><span class="line"></span><br><span class="line">            --name &lt;Name&gt;</span><br><span class="line">                设置分发的名称。</span><br><span class="line"></span><br><span class="line">            --no-distribution</span><br><span class="line">                仅安装所需的可选组件，不安装分发版。</span><br><span class="line"></span><br><span class="line">            --no-launch, -n</span><br><span class="line">                安装后不要启动分发版。</span><br><span class="line"></span><br><span class="line">            --version &lt;Version&gt;</span><br><span class="line">                指定要用于新分发的版本。</span><br><span class="line"></span><br><span class="line">            --web-download</span><br><span class="line">                从 Internet 而不是 Microsoft Store 下载分发版。</span><br><span class="line"></span><br><span class="line">    --manage &lt;Distro&gt; &lt;Options...&gt;</span><br><span class="line">        更改发行版特定选项。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --move &lt;Location&gt;</span><br><span class="line">                将分发移到新位置。</span><br><span class="line"></span><br><span class="line">            --set-sparse, -s &lt;true|false&gt;</span><br><span class="line">                将发行版的 vhdx 设置为稀疏，从而允许自动回收磁盘空间。</span><br><span class="line"></span><br><span class="line">            --set-default-user &lt;Username&gt;</span><br><span class="line">                设置分发版的默认用户。</span><br><span class="line"></span><br><span class="line">    --mount &lt;Disk&gt;</span><br><span class="line">        在所有 WSL 2 分发版中附加和装载物理磁盘或虚拟磁盘。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --vhd</span><br><span class="line">                指定 &lt;Disk&gt; 引用虚拟硬盘。</span><br><span class="line"></span><br><span class="line">            --bare</span><br><span class="line">                将磁盘附加到 WSL2，但不要装载它。</span><br><span class="line"></span><br><span class="line">            --name &lt;Name&gt;</span><br><span class="line">                使用装入点的自定义名称装载磁盘。</span><br><span class="line"></span><br><span class="line">            --type &lt;Type&gt;</span><br><span class="line">                装载磁盘时要使用的文件系统(如果未指定)默认为 ext4。</span><br><span class="line"></span><br><span class="line">            --options &lt;Options&gt;</span><br><span class="line">                其他装载选项。</span><br><span class="line"></span><br><span class="line">            --partition &lt;Index&gt;</span><br><span class="line">                要装载的分区的索引(如果未指定)默认为整个磁盘。</span><br><span class="line"></span><br><span class="line">    --set-default-version &lt;Version&gt;</span><br><span class="line">        更改新分发版的默认安装版本。</span><br><span class="line"></span><br><span class="line">    --shutdown</span><br><span class="line">        立即终止所有正在运行的分发版和 WSL 2</span><br><span class="line">        轻型实用工具虚拟机。</span><br><span class="line"></span><br><span class="line">    --status</span><br><span class="line">        显示适用于 Linux 的 Windows 子系统状态。</span><br><span class="line"></span><br><span class="line">    --unmount [磁盘]</span><br><span class="line">        从所有 WSL2 分发版中卸载和分离磁盘。</span><br><span class="line">        如果在没有参数的情况下调用，则卸载和分离所有磁盘。</span><br><span class="line"></span><br><span class="line">    --uninstall</span><br><span class="line">        从此计算机卸载适用于 Linux 的 Windows 子系统包。</span><br><span class="line"></span><br><span class="line">    --update</span><br><span class="line">        更新适用于 Linux 的 Windows 子系统包。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --pre-release</span><br><span class="line">                下载预发行版本(如果可用)。</span><br><span class="line"></span><br><span class="line">    --version, -v</span><br><span class="line">        显示版本信息。</span><br><span class="line"></span><br><span class="line">用于在适用于 Linux 的 Windows 子系统中管理分发版的参数:</span><br><span class="line"></span><br><span class="line">    --export &lt;Distro&gt; &lt;FileName&gt; [选项]</span><br><span class="line">        将分发版导出到 tar 文件。</span><br><span class="line">        文件名可以是 - for stdout。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --format &lt;Format&gt;</span><br><span class="line">                指定导出格式。支持的值: tar、tar.gz、vhd。</span><br><span class="line"></span><br><span class="line">    --import &lt;Distro&gt; &lt;InstallLocation&gt; &lt;FileName&gt; [选项]</span><br><span class="line">        将指定的 tar 文件作为新分发版导入。</span><br><span class="line">        文件名可以是 - for stdin。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --version &lt;Version&gt;</span><br><span class="line">                指定要用于新分发的版本。</span><br><span class="line"></span><br><span class="line">            --vhd</span><br><span class="line">                指定所提供的文件是 .vhdx 文件，而不是 tar 文件。</span><br><span class="line">                此操作在指定的安装位置创建 .vhdx 文件的副本。</span><br><span class="line"></span><br><span class="line">    --import-in-place &lt;Distro&gt; &lt;FileName&gt;</span><br><span class="line">        将指定的 .vhdx 文件作为新分发版导入。</span><br><span class="line">        必须使用 ext4 文件系统类型设置此虚拟硬盘的格式。</span><br><span class="line"></span><br><span class="line">    --list, -l [选项]</span><br><span class="line">        列出分发版。</span><br><span class="line"></span><br><span class="line">        选项:</span><br><span class="line">            --all</span><br><span class="line">                列出所有分发版，包括当前</span><br><span class="line">                正在安装或卸载的分发版。</span><br><span class="line"></span><br><span class="line">            --running</span><br><span class="line">                仅列出当前正在运行的分发版。</span><br><span class="line"></span><br><span class="line">            --quiet, -q</span><br><span class="line">                仅显示分发版名称。</span><br><span class="line"></span><br><span class="line">            --verbose, -v</span><br><span class="line">                显示有关所有分发版的详细信息。</span><br><span class="line"></span><br><span class="line">            --online, -o</span><br><span class="line">                显示适合通过 &#x27;wsl --install&#x27; 安装的可用分发版列表。</span><br><span class="line"></span><br><span class="line">    --set-default, -s &lt;Distro&gt;</span><br><span class="line">        将分布版设置为默认值。</span><br><span class="line"></span><br><span class="line">    --set-version &lt;Distro&gt; &lt;Version&gt;</span><br><span class="line">        更改指定分发版的版本。</span><br><span class="line"></span><br><span class="line">    --terminate, -t &lt;Distro&gt;</span><br><span class="line">        终止指定的分发版。</span><br><span class="line"></span><br><span class="line">    --unregister &lt;Distro&gt;</span><br><span class="line">        取消注册分发版并删除根文件系统。</span><br></pre></td></tr></table></figure></div>
 <h2 id="完结撒花">完结撒花</h2>
-<p>好了，如果你按照教程一步步踏实去做的话，现在应该已经掌握快速驯服 VSCode 的方法了，欢迎转载文章！ <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>简介来源于百度百科。原页面 <a class="link"   target="_blank" rel="noopener" href="https://baike.baidu.com/item/visual%20studio%20code/17514281#reference-2" >https://baike.baidu.com/item/visual studio code/17514281#reference-2<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>如果操作系统不满足条件（ Windows 版本小于 Windows 10 ， macOS 版本小于 macOS 10.15 ），则须要 <a class="link"   target="_blank" rel="noopener" href="https://code.visualstudio.com/updates" >从这里<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载当前对系统的最后支持版本。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>转载请注明原平台 Luogu ，和作者 Innate_Joker 。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+<p>因为这篇几乎都是命令行操作，所以几乎没有图片。而且展示大多为命令行输出，所以也没有语法高亮，不要在意啦。</p>
 
 		</div>
 
@@ -750,18 +632,18 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 快速驯服 VSCode - OIer</li>
+        <li><strong>标题:</strong> WSL 使用基础</li>
         <li><strong>作者:</strong> Innate_Joker</li>
         <li><strong>创建于
-                :</strong> 2025-04-08 15:23:00</li>
+                :</strong> 2025-09-14 12:00:34</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2025-09-14 11:59:31
+                    :</strong> 2025-09-14 12:38:18
             </li>
         
         <li>
-            <strong>链接:</strong> https://innatejoker.github.io/2025/04/08/快速驯服 VSCode - OIer/
+            <strong>链接:</strong> https://innatejoker.github.io/2025/09/14/WSL 使用基础/
         </li>
         <li>
             <strong>
@@ -783,11 +665,11 @@
 		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
 			
 			<li class="tag-item mx-0.5">
-				<a href="/tags/VSCode/">#VSCode</a>&nbsp;
+				<a href="/tags/WSL/">#WSL</a>&nbsp;
 			</li>
 			
 			<li class="tag-item mx-0.5">
-				<a href="/tags/C/">#C++</a>&nbsp;
+				<a href="/tags/Linux/">#Linux</a>&nbsp;
 			</li>
 			
 		</ul>
@@ -798,18 +680,18 @@
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2025/09/14/WSL%20%E4%BD%BF%E7%94%A8%E5%9F%BA%E7%A1%80/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/04/08/%E5%BF%AB%E9%80%9F%E9%A9%AF%E6%9C%8D%20VSCode%20-%20OIer/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">WSL 使用基础</span>
-						<span class="post-nav-item">上一篇</span>
+						<span class="post-nav-title-item truncate max-w-48">快速驯服 VSCode - OIer</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -823,8 +705,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">快速驯服 VSCode - OIer</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Updates"><span class="nav-text">Updates</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VSCode-%E7%AE%80%E4%BB%8B"><span class="nav-text">VSCode 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD"><span class="nav-text">编译器下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode-%E4%B8%8B%E8%BD%BD"><span class="nav-text">VSCode 下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD"><span class="nav-text">插件下载</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-JSON"><span class="nav-text">配置 JSON</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-launch-json-%E6%96%87%E4%BB%B6"><span class="nav-text">创建 launch.json 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-launch-json"><span class="nav-text">配置 launch.json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-cpp-%E6%96%87%E4%BB%B6"><span class="nav-text">创建 .cpp 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-%E9%85%8D%E7%BD%AE-tasks-json-%E6%96%87%E4%BB%B6"><span class="nav-text">创建 &amp; 配置 tasks.json 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8-launch-json-%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0-preLaunchTask-%E9%94%AE"><span class="nav-text">在 launch.json 文件中添加 preLaunchTask 键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C"><span class="nav-text">最终结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E5%92%8C%E8%BF%90%E8%A1%8C%E4%BB%A3%E7%A0%81"><span class="nav-text">调试和运行代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-VSCode-%E9%9B%86%E6%88%90%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9D%A5%E8%BF%90%E8%A1%8C%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E3%80%82"><span class="nav-text">使用 VSCode 集成控制台来运行调试代码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%B1%BB%E4%BC%BC-DEV-C-%E7%9A%84%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81"><span class="nav-text">使用类似 DEV-C++ 的控制台调试代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C%E7%BB%93%E6%92%92%E8%8A%B1"><span class="nav-text">完结撒花</span></a></li></ol>
+		<div class="page-title">WSL 使用基础</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8-WSL"><span class="nav-text">启用 WSL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%88%86%E5%8F%91"><span class="nav-text">安装分发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E5%88%97%E8%A1%A8"><span class="nav-text">查看已安装列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%8F%AF%E4%BB%A5%E5%AE%89%E8%A3%85%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%88%86%E5%8F%91"><span class="nav-text">查看可以安装的在线分发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%88%86%E5%8F%91-2"><span class="nav-text">安装分发</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E5%88%86%E5%8F%91"><span class="nav-text">启动分发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E6%8C%87%E5%AE%9A%E5%88%86%E5%8F%91"><span class="nav-text">关闭指定分发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WSL-%E5%91%BD%E4%BB%A4"><span class="nav-text">WSL 命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C%E7%BB%93%E6%92%92%E8%8A%B1"><span class="nav-text">完结撒花</span></a></li></ol>
 
 	</div>
 </div>
